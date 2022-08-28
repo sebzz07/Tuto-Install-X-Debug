@@ -66,3 +66,19 @@ php -v
 >Pour aide : voici un tuto avec une technique un peu differente (laragon) mais il explique le fonctionnement de l'outil X-debug... si ça peut aider... https://youtu.be/So0CWpu0Rf8
 
 Ce tuto est la version alpha, chacun pourrait l'enrichir afin d'en faire un veritable tuto ;)
+
+Info avec Laragon (de Lam's):
+
+Xdebug => Laragon => VSCODE Résolu
+
+Pour ceux qui galère à installer xdebug voici, si il est bien installer mais qu'il ne marche pas sur VSCode voici la config à avoir dans php.ini
+
+zend_extension=C:\laragon\bin\php\php-8.1.9-Win32-vs16-x64\ext\php_xdebug.dll
+xdebug.mode = debug
+xdebug.client_host = 127.0.0.1
+xdebug.client_port = 9003
+xdebug.start_with_request=yes
+xdebug.idekey = VSCODE
+xdebug.discover_client_host=false
+
+Xdebug et en v3 mais le client possède la config de la v2 alors il faut rajouter des paramètres
