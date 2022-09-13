@@ -97,11 +97,13 @@ xdebug.file_link_format="phpstorm://open?file=%f&line=%l"
 SMTP=smtp.gmail.com
 smtp_port=587
 sendmail_from = sebzz13test@gmail.com
-sendmail_path = "\"C:\wamp64\sendmail\sendmail.exe\" -t"```
+sendmail_path = "\"C:\wamp64\sendmail\sendmail.exe\" -t"
+```
 
 php.ini du projet :
 
 ```xdebug.start_with_request=yes
 xdebug.mode=debug
 xdebug.log_level=3
-xdebug.discover_client_host = 1```
+xdebug.discover_client_host = 1
+```
