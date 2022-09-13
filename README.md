@@ -82,3 +82,26 @@ xdebug.idekey = VSCODE
 xdebug.discover_client_host=false
 
 Xdebug et en v3 mais le client possède la config de la v2 alors il faut rajouter des paramètres
+
+tips et faq :
+
+php.ini (php8.1.0 windows) :
+```[XDebug]
+xdebug.idekey=PHPSTORM
+xdebug.start_with_request=yes
+xdebug.client_host=127.0.0.1
+xdebug.file_link_format="phpstorm://open?file=%f&line=%l"
+
+
+[sendmail]
+SMTP=smtp.gmail.com
+smtp_port=587
+sendmail_from = sebzz13test@gmail.com
+sendmail_path = "\"C:\wamp64\sendmail\sendmail.exe\" -t"```
+
+php.ini du projet :
+
+```xdebug.start_with_request=yes
+xdebug.mode=debug
+xdebug.log_level=3
+xdebug.discover_client_host = 1```
